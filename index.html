@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formular pentru colectarea datelor personale conform GDPR pentru redistribuirea unui procent din impozit către clubul sportiv de Karate din orașul Victoria.">
+    <title>Formular Colectare Date - Club Sportiv Karate Victoria</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Club Sportiv Karate Victoria</h1>
+        <p>Completează formularul pentru redistribuirea unui procent din impozit către clubul nostru.</p>
+        <form>
+            <label for="nume">Nume</label>
+            <input type="text" id="nume" name="nume" placeholder="Introduceți numele" required>
+
+            <label for="prenume">Prenume</label>
+            <input type="text" id="prenume" name="prenume" placeholder="Introduceți prenumele" required>
+
+            <label for="telefon">Număr de telefon</label>
+            <input type="tel" id="telefon" name="telefon" placeholder="07xxxxxxxx" required>
+
+            <label for="adresa">Adresă</label>
+            <input type="text" id="adresa" name="adresa" placeholder="Introduceți adresa completă" required>
+
+            <label for="cnp">CNP</label>
+            <input type="text" id="cnp" name="cnp" placeholder="Introduceți CNP-ul" required>
+
+            <label for="semnatura">Semnătura</label>
+            <canvas class="signature-box" id="semnatura"></canvas>
+
+            <div class="gdpr-section">
+                <label>
+                    <input type="checkbox" id="gdpr" name="gdpr" required>
+                    Sunt de acord cu colectarea și procesarea datelor mele conform legilor GDPR în vigoare în România (2025).
+                </label>
+            </div>
+
+            <button type="submit">Trimite</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
