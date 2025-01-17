@@ -25,7 +25,7 @@
             <input type="text" id="adresa" name="adresa" placeholder="Introduceți adresa completă" required>
 
             <label for="cnp">CNP</label>
-            <input type="text" id="cnp" name="cnp" placeholder="Introduceți CNP-ul" required>
+            <input type="number" id="cnp" name="cnp" placeholder="Introduceți CNP-ul" required>
 
             <label for="semnatura">Semnătura</label>
             <canvas class="signature-box" id="semnatura"></canvas>
@@ -37,6 +37,7 @@
                 </label>
             </div>
 
+            <button type="button" id="clear-signature">Șterge Semnătura</button>
             <button type="submit">Trimite</button>
         </form>
     </div>

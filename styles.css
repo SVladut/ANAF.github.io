@@ -1,16 +1,15 @@
-/* Global Styles */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(100deg, #5bb5ff, #ff1317, #5bb5ff); /* Fundal subtil */
+    background: linear-gradient(100deg, #5bb5ff, #ff1317, #5bb5ff); 
     color: #333;
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Asigură alinierea la începutul paginii */
-    height: auto; /* Permite paginii să crească la înălțimea necesară */
-    min-height: 100vh; /* Înălțimea minimă de 100% din înălțimea ecranului */
-    overflow-y: auto; /* Permite scroll vertical */
+    align-items: flex-start;
+    height: auto;
+    min-height: 100vh;
+    overflow-y: auto; 
 }
 .container {
     width: 100%;
@@ -19,31 +18,29 @@ body {
     padding: 40px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
-    animation: fadeIn 1s ease-in-out forwards; /* Folosirea 'forwards' pentru a păstra stilurile finale */
-    border: 5px solid #ffffff; /* Bordură albă pentru tema Karate */
-    background-image: url('logo.png'); /* Imaginea de fundal */
-    background-size: 700px 700px; /* Ajustează imaginea pentru a acoperi întreaga zonă */
-    background-position: center 10%; /* Poziționează imaginea de fundal în partea de sus a containerului */
+    animation: fadeIn 1s ease-in-out forwards; 
+    border: 5px solid #ffffff;
+    background-position: center 10%;
     background-repeat: no-repeat;
-    opacity: 0.7; /* Opacitate pentru fundal */
-    margin: 50px; /* Elimină marginea de sus pentru a începe mai sus */
+    opacity: 0.7;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
-/* Animația de fade-in */
 @keyframes fadeIn {
     from {
-        opacity: 0; /* Opacitatea începe de la 0 */
-        transform: translateY(-20px); /* Poziționare la început */
+        opacity: 0;
+        transform: translateY(-20px); 
     }
     to {
-        opacity: 1; /* La final, opacitatea ajunge la 1 */
-        transform: translateY(0); /* Poziționare finală */
+        opacity: 1; 
+        transform: translateY(0); 
     }
 }
 
 h1 {
     text-align: center;
-    color: #f13030; /* Roșu Karate */
+    color: #f13030; 
     font-size: 40px;
     margin-bottom: 15px;
     text-transform: uppercase;
@@ -61,9 +58,9 @@ form {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    align-items: center;
 }
 
-/* Input Fields */
 label {
     font-weight: bold;
     color: #444;
@@ -74,7 +71,7 @@ input[type="text"],
 input[type="tel"],
 input[type="number"],
 textarea {
-    width: 100%;
+    width: 60%;
     padding: 12px;
     border: 2px solid #ccc;
     border-radius: 8px;
@@ -86,11 +83,10 @@ input[type="text"]:focus,
 input[type="tel"]:focus,
 input[type="number"]:focus,
 textarea:focus {
-    border-color: #5c95ff; /* Albastru la focus */
+    border-color: #5c95ff; 
     outline: none;
 }
 
-/* Signature Box */
 .signature-box {
     width: 400px;
     height: 300px;
@@ -104,16 +100,14 @@ textarea:focus {
 }
 
 .signature-box:hover {
-    background-color: #e8f1fe; /* Fundal mai deschis când utilizatorul trece cursorul */
+    background-color: #e8f1fe; 
 }
 
-/* GDPR Section */
 .gdpr-section {
     font-size: 14px;
     color: #666;
 }
 
-/* Button Styles */
 button {
     background: linear-gradient(135deg, #5c95ff, #3c7cf1); /* Albastru la buton */
     color: white;
@@ -135,7 +129,6 @@ button:hover {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Responsive Design */
 @media (max-width: 600px) {
     .container {
         padding: 20px;
@@ -146,7 +139,7 @@ button:hover {
     }
 
     .signature-box {
-        width: 90%; /* Ajustează dimensiunea semnăturii pe mobil */
+        width: 90%; 
         height: 200px;
     }
 
@@ -154,4 +147,26 @@ button:hover {
         padding: 12px 18px;
         font-size: 14px;
     }
+}
+
+
+
+button {
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-top: 20px;
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin-bottom: 10px; 
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
